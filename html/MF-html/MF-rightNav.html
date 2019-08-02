@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/MF-css/initializ.css" />
+  <link rel="stylesheet" href="../../css/MF-css/MF_rightNav.css" />
+  <link rel="stylesheet" href="../../font/iconfont.css" />
+</head>
+<script src="../../js/MF-js/jquery-1.12.1.js"></script>
+<script src="../../js/MF-js/MF-rightNav.js"></script>
+<script src="../../js/MF-js/login.js"></script>
+
+<body>
+  <div class="rightnavwrap">
+    <div class="rightnav">
+      <div class="navleft">
+        <div class="myinfo box">
+          <i class="iconfont icon-ren info"></i>
+          <div class="tip">
+            <span>我的信息</span>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="shop">
+            <i class="iconfont icon-gouwuche info"></i>
+          </div>
+
+          <div class="cartfont">
+            <P>购</P>
+            <P>物</P>
+            <P>车</P>
+          </div>
+          <div class="redDot">
+            <span>0</span>
+          </div>
+        </div>
+        <div class="collect box">
+          <i class="iconfont icon-xing-copy info"></i>
+          <div class="tip">
+            <span>我的收藏</span>
+          </div>
+        </div>
+        <div class="history box">
+          <i class="iconfont icon-shijian info"></i>
+          <div class="tip">
+            <span>我的历史</span>
+          </div>
+        </div>
+        <div class="sec-code box">
+          <i class="iconfont icon-two-dimensional-code info"></i>
+          <div class="tip tipcode">
+            <img src="../../images/MF-image/MF-elect/1.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="service box">
+          <i class="iconfont icon-kefu info"></i>
+          <div class="tip">
+            <span>我的客服</span>
+          </div>
+        </div>
+        <div class="returnTop box">
+          <i class="iconfont icon-fanhuidingbu info"></i>
+          <div class="tip">
+            <span>返回顶部</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightcont">
+      <div class="rightcontTop">
+        <div class="rightarrow">
+          <span>>></span>
+        </div>
+      </div>
+      <div class="rightlogin">
+        <div class="login-ban">
+          <ul>
+            <li class="login-title">
+              <h2>会员登录</h2>
+              <p class="newcount">
+                <a href="./MF-register.html">注册新账号</a>
+              </p>
+            </li>
+            <li class="login-item">
+              <form action="" id="formLoginValid">
+                <div class="logininput">
+                  <input type="text" name="count" class="count inputtxt" placeholder="用户名/手机号/邮箱" />
+                  <p class="counterror error"></p>
+                  <div class="tuboap">
+                    <i class="iconfont icon-ren iconstyle"></i>
+                  </div>
+                </div>
+
+                <div class="logininput">
+                  <input type="text" name="pwd" class="pwd inputtxt" placeholder="密码" />
+                  <p class="pwderror error"></p>
+                  <div class="tuboap">
+                    <i class="iconfont icon-mima iconstyle"></i>
+                  </div>
+                </div>
+
+                <div class="code logininput">
+                  <input type="text" name="verificationCode" placeholder="验证码" class="verificationCode inputtxt" />
+                  <div class="codeCanvas">
+                    <canvas id="canvas" width="110" height="40"></canvas>
+                  </div>
+                  <div class="tuboap">
+                    <i class="iconfont icon-mima iconstyle"></i>
+                  </div>
+                </div>
+                <p class="codeerror error"></p>
+                <div class="clearfix">
+                  <p class="forgetPassword">
+                    <a href="javascript:">忘记密码?</a>
+                  </p>
+                </div>
+                <input type="button" value="登录" class="btn inputtxt" />
+                <p class="namepwd error"></p>
+                <div class="clearfix">
+                  <p class="viplogin">
+                    <a href="javascript:">百联通会员卡首次登录</a>
+                  </p>
+                </div>
+              </form>
+            </li>
+            <li class="otherpartner">
+              <div class="bottom-line">
+                <span>其他账号联合登录</span>
+              </div>
+            </li>
+            <li class="partner">
+              <a href="javascript:">
+                <div class="partnercount">
+                  <img src="../../images/MF-image/MF-login_reg/login-cion-1.png" alt="图片" />
+                </div>
+              </a>
+              <a href="javascript:">
+                <div class="partnercount">
+                  <img src="../../images/MF-image/MF-login_reg/login-cion-2.png" alt="图片" />
+                </div class="partnercount">
+              </a>
+              <a href="javascript:">
+                <div class="partnercount">
+                  <img src="../../images/MF-image/MF-login_reg/login-cion-3.png" alt="图片" />
+                </div>
+              </a>
+              <a href="javascript:">
+                <div class="partnercount">
+                  <img src="../../images/MF-image/MF-login_reg/login-cion-4.png" alt="图片" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-ban">
+          <div class="cart-content">
+            <ul class="product_show">
+              <!-- <li>
+                <div class="rigImg">
+                  <img src="../../images/MF-image/MF-cart/SP_2000_20000211344001_01_10006.jpg" alt="图片">
+                </div>
+                <div class="rightIntroduct">
+                  <div><span>沙宣VS 强力持久造型啫哩水 150ml</span></div>
+                  <div>
+                    <span>32.00</span>
+                    <span>x</span>
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="rightPrice">
+                  <span>￥</span>
+                  <span>32.00</span>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+          <div class="cart-bottom">
+            <div class="cartpriceTotal">
+              <span>共</span>
+              <span id="txtTotalNum">0</span>
+              <span>件商品</span>，
+              <span>总计：</span>
+              <span>￥</span>
+              <span id="txtTotalPrice">0.00</span>
+            </div>
+            <button class="lookCart">查看购物车</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

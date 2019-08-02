@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/css-dc/banner4.css">
+    <link rel="stylesheet" href="../../css/css-dc/header.css">
+    <link rel="stylesheet" href="../../css/css-dc/footer.css">
+</head>
+
+<body>
+    <div class="warp">
+        <div class="discounts widthDc">
+            <img src="../../images/images-dc/banner4/1468319538.jpg">
+            <div>
+                <img src="../../images/images-dc/banner4/643323117.jpg" class="bottomFl">
+            </div>
+            <div class="proHot typeAreaDc">
+                <img src="../../images/images-dc/banner4/2141034323.jpg" alt="">
+            </div>
+        </div>
+        <div class="pro_first">
+        </div>
+        <div class="beautifulBox"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/js-dc/jquery-1.12.1.js"></script>
+    <script>
+        $(function () {
+            function pro_first(num1, num2) {
+                var titleImg = "";
+                var str = "";
+                $.ajax({
+                    type: "GET",
+                    dataType: "JSON",
+                    url: "../../php/php-dc/banner4.php",
+                    data: {
+                        num: 1
+                    },
+                    error: function () {
+                        // alert("服务器连接失败");
+                    },
+                    success: function (res) {
+                        var img_url = "";
+                        for (key in res) {
+                            if (num1 <= key && key < num2) {
+                                if (res[key].title_img != null) {
+                                    titleImg += `
+                            <div class="discounts widthDc title_img">
+                                <img src="${res[key].title_img}">
+                            </div> `;
+                                };
+                                str += `
+                    <dd class="listPro">
+                    <img src="${res[key].img_url}" alt="${res[key].title}">
+                    <a href=" ../html-wyh/detaill.html">${res[key].title}</a>
+                    <div class="bottomDc">
+                        <span class="price">${res[key].price}</span><button class="addCart"></button>
+                    </div>
+                </dd>
+                    `;
+                            }
+                        };
+                        str = `
+                    <div class="listBox clearfix">
+                <dl>
+                    ${str}
+                </dl>
+            </div>
+                    `
+                        $(".pro_first").append(titleImg);
+                        $(".pro_first").append(str);
+                    }
+                })
+            }
+            pro_first(0, 6);
+            pro_first(6, 12);
+            pro_first(12, 18);
+            pro_first(18, 24);
+
+            function pro_second(num) {
+                var str = "";
+                var title_img = "";
+                var strDd = "";
+                var strBottom = "";
+                $.ajax({
+                    type: "GET",
+                    dataType: "JSON",
+                    url: "../../php/php-dc/banner4.php",
+                    data: {
+                        num: num,
+                    },
+                    error: function () {
+                        // alert("服务器连接失败");
+                    },
+                    success: function (res) {
+                        for (key in res) {
+                            console.log(res[key].title_img)
+                            if (res[key].title_img !== null) {
+                                title_img += `
+                                <div class="proHot typeAreaDc">
+                    <img src="${res[key].title_img }">
+                </div>`;
+                            };
+
+                            if (res[key].price == num) {
+                                strBottom += `
+                                <dd class="strBottom">
+                        <a href=" ../html-wyh/detaill.html">
+                            <img src="${res[key].img_url}">
+                        </a>
+                        <p class="discounts">${res[key].title}</p>
+                        <a href=" ../html-wyh/detaill.html" class="enterInto">点击进入</a>
+                    </dd>
+                                `;
+                            } else {
+                                strDd += `
+                            <dd class="str">
+                        <a href=" ../html-wyh/detaill.html">
+                            <img src="${res[key].img_url}">
+                        </a>
+                        <p class="discounts">${res[key].title}</p>
+                        <a href=" ../html-wyh/detaill.html" class="enterInto">点击进入</a>
+                    </dd>
+                            `;
+                            }
+                        }
+                        strDd = `
+                        <dl class="clearfix">
+                    ${strDd}${strBottom}
+                </dl>
+                        `;
+                        str += `
+                        <div class="beautiful">
+                ${title_img}
+                ${strDd}
+            </div>
+                        `;
+                        $(".beautifulBox").append(str);
+                    }
+                })
+            }
+            (function () {
+                pro_second(2);
+                pro_second(3);
+            }())
+
+        })
+    </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#header").load("header.html")
+        })
+    </script>
+     <script>
+        $("#footer").load("../html-lz/footer.html");
+    </script>
+</body>
+
+</html>

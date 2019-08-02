@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/MF-css/initializ.css" />
+    <link rel="stylesheet" href="../../css/MF-css/MF-login.css" />
+    <link rel="stylesheet" href="../../font/iconfont.css" />
+</head>
+
+<body>
+    <div class="register-main">
+        <div class="typeArea">
+            <!-- 登录注册头部信息 -->
+            <div class="logregtop">
+                <div class="logo">
+                    <img src="../../images/logo_lg.png" alt="图片">
+                </div>
+                <div class="logtoptitle">
+                    <img src="../../images/MF-image/MF-login_reg/V3login-font4.png" alt="图片">
+                </div>
+            </div>
+            <div class="register-content">
+                <div class="register-ban">
+                    <div class="center-top">
+                        <p class="partin">您好，感谢您加入百联</p>
+                        <p class="logintip">
+                            <span>如有账号，请点击</span>
+                            <span><a href="../../html/MF-html/MF-login.html">登录</a></span>
+                        </p>
+                    </div>
+                    <div class="register-info">
+                        <form action="" id="registValid">
+                            <div class="gap">
+                                <div class="titleinfo"><span>*</span>用户名：</div>
+                                <div class="logininput">
+                                    <input type="text" placeholder="6-20位字符，支持字母或字母与数字组合" name="username"
+                                        class="username inputtxt">
+                                    <p class="regname"></p>
+                                </div>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-ren iconstyle"></i>
+                                </div>
+                            </div>
+                            <div class="gap">
+                                <div class="titleinfo"><span>*</span>登录密码：</div>
+                                <input type="password" placeholder="8-20位字符，至少使用两种字符组合" name="registerPwd"
+                                    class="registerPwd inputtxt">
+                                <p class="regpwd"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-mima iconstyle"></i>
+                                </div>
+                            </div>
+                            <div class="gap">
+                                <div class="titleinfo"><span>*</span>确认密码：</div>
+                                <input type="password" placeholder="请再次输入密码" name="rePwd" class="rePwd inputtxt">
+                                <p class="reregpwd"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-mima iconstyle"></i>
+                                </div>
+                            </div>
+                            <div class="gap">
+                                <div class="titleinfo"><span>*</span>手机号：</div>
+                                <input type="text" placeholder="请输入11位手机号" name="phone" class="phone inputtxt">
+                                <p class="regphone"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-shouji iconstyle"></i>
+                                </div>
+                            </div>
+                            <div class="gap">
+                                <div class="titleinfo">电子邮箱：</div>
+                                <input type="text" placeholder="请输入有效邮箱" name="email" class="email inputtxt">
+                                <p class="regemail"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-youjian iconstyle"></i>
+                                </div>
+                            </div>
+
+                            <div class="vercode gap">
+                                <div class="titleinfo">验证码：</div>
+                                <input type="text" name="验证码" placeholder="请输入验证码" name="regverCode"
+                                    class="regverCode inputtxt" />
+                                <div class="registCanvas">
+                                    <canvas id="canvas" width="100" height="36"></canvas>
+                                </div>
+                                <p class="regcode"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-mima iconstyle"></i>
+                                </div>
+                            </div>
+
+                            <div class="gap">
+                                <div class="titleinfo"><span>*</span>短信验证码：</div>
+                                <input type="text" name="短信验证码" placeholder="请输入短信验证码" name="news"
+                                    class="news inputtxt" />
+                                <input type="button" value="获取验证码" class="codeBtn inputtxt">
+                                <p class="regphonecode"></p>
+                                <div class="regtuboap">
+                                    <i class="iconfont icon-mima iconstyle"></i>
+                                </div>
+                            </div>
+                            <div class="gap">
+                                <input type="checkbox" name="" id="" class="agree" checked>
+                                <span>我已阅读并同意</span>
+                                <a href="javascript:">《百联通会员注册协议》</a>、
+                                <a href="javascript:">《安付宝用户服务协议》</a>、
+                                <a href="javascript:">《安付宝隐私权政策》</a>
+                            </div>
+                            <div class="gap">
+                                <input type="button" value="立即注册 完成绑定" class="reginterbtn inputtxt">
+                                <p class="regerror"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 登录注册底部信息 -->
+            <div class="logregbottom">
+                <div class="logregb1">
+                    <a href="javascript:">关于我们</a><span>|</span>
+                    <a href="javascript:">联系我们</a><span>|</span>
+                    <a href="javascript:">加盟合作</a><span>|</span>
+                    <a href="javascript:">诚征英才</a><span>|</span>
+                    <a href="javascript:">友情链接</a><span>|</span>
+                    <a href="javascript:">新零售合作</a>
+                </div>
+                <div class="logregb2">
+                    百联集团有限公司版权所有<span>|</span>
+                    客服电话：400-900-8800 <span>|</span>
+                    沪ICP备15028847号
+                </div>
+                <div class="logregb3">
+                    <a href="javascript:">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a>
+                </div>
+                <div class="logregb4">
+                    <a href="javascript:">全渠道增值电信业务经营许可证</a>
+                </div>
+                <ul class="logregb5 clearfix">
+                    <li>
+                        <img src="../../images/MF-image/MF-login_reg/gongan.png" alt="图片">
+                        <a href="javascript:">沪公网安备 31010102002366号</a>
+                    </li>
+                    <li>
+                        <img src="../../images/MF-image/MF-login_reg/gongs.png" alt="图片">
+                        <a href="javascript:">上海工商</a>
+                    </li>
+                    <li>
+                        <img src="../../images/MF-image/MF-login_reg/zhizhao.png" alt="图片">
+                        <a href="javascript:">经营执照</a>
+                    </li>
+                    <li>
+                        <img src="../../images/MF-image/MF-login_reg/wangjing1.png" alt="图片">
+                        <a href="javascript:">网购大家评</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/MF-js/jquery-1.12.1.js"></script>
+    <script src="../../js/MF-js/login.js"></script>
+</body>
+
+</html>

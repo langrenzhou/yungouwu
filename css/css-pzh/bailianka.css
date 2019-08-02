@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width:100%;
+}
+.gift_head{
+    width: 1200px;
+    height:96px;
+    margin: 0 auto;
+}
+.gift_logo{
+    float: left;
+    margin-top: 15px;
+    border-right: 1px solid darkgray;
+    width: 100px;
+    height: 70px;
+}
+.gift_logo img{
+    width: 70px;     
+}
+.Cloudcard{
+    float: left;
+    margin-top: 26px;
+    margin-left: 50px;
+    width: 90px;
+}
+.Cloudcard h1{
+    font-size: 30px;
+    letter-spacing: 14px;
+    color: red;
+}
+.gift_nav{
+    width: 600px;
+    height: 30px;
+    float: left; 
+    margin-left: 114px;
+    margin-top: 60px;
+
+}
+.gift_nav li{
+    float: left;
+    font-size: 16px;
+    margin: 0 15px;
+}
+.gift_nav li a{
+    color: black;
+    padding: 0 10px 5px;
+}
+.gift_nav li a.cur{
+    border-bottom: 4px solid #ff4a4a;
+}
+.gift_tit{
+    float: left;
+    width: 245px;
+    height: 40px;
+    margin-top: 30px;  
+}
+.gift_head .gift_search{
+    float: left;
+    margin-top: 6px;
+    font-size: 20px;
+}
+.gift_tit_p{
+    line-height: 20px;
+    padding-left: 36px;
+}
+.gift_tit_p b {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.gift_tit_p a {
+    margin: 0 9px;
+    color: #999;
+    cursor: default;
+}
+/* 以上是抬头 */
+#box{
+  width: 1920px;
+  position: relative;
+}
+.slideshow_img{
+    vertical-align: top;
+    width: 100%;
+    float: left;
+    height: 377px;
+  }
+
+  .all {
+    width: 100%;
+    height: 377px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 377px;
+    background-color: pink;
+    overflow: hidden;
+  }
+
+  .inner ul {
+    width: 1000%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .inner ul li {
+    float: left;
+  }
+  .inner ol {
+    position: absolute;
+    margin-right: 920px;
+    right: 30px;
+    bottom: 10px;
+    z-index: 10;
+  }
+
+  .inner ol li {
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    line-height: 15px;
+    text-align: center;
+    background-color: #fff;
+  }
+  /*当前的高亮的小圆点*/
+  .inner ol .current {
+    background-color: orange;
+    color: #fff;
+  }
+
+  
+.slideshow_heart{
+     width: 1200px;
+     height: 377px;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     margin-left: -600px;
+  }
+.focusD {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1200px;
+  height: 30px;
+  box-sizing: border-box;
+}
+.focusD span {
+  display: inline-block;
+  width: 25px;
+  font-size: 24px;
+  height: 30px;
+  color: #ccc;
+  line-height: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+#left {
+  float: left;
+  margin-left: 250px;
+}
+
+#right {
+  float: right;
+  margin-right: 250px;
+}
+
+
+
+.banner-recommend {
+  width: 235px;
+  height: 367px;
+  margin-left: 380px;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  overflow: hidden;
+  z-index: 12;
+  background: #fff;
+}
+.ban_tit1 a {
+  font-size: 12px;
+  margin-left: 30px;
+}
+.ban_tit1 {
+  height: 52px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.ban_tit2 {
+  height: 219px;
+  border-bottom: 1px solid #eee;
+}
+.ban_tit2_item {
+  padding: 0 8px;
+  height: 77px;
+  border-bottom: 1px solid #eee;
+}
+li.ban_tit2_item1 {
+  width: 34%;
+}
+.ban_tit2_item li {
+  width: 33%;
+  height: 77px;
+  line-height: 115px;
+  text-align: center;
+  float: left;
+}
+.ban_tit2_item li a {
+  height: 77px;
+  display: block;
+  color: #666;
+}
+li {
+  list-style: none;
+}
+.ban_tit2_btn {
+  height: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+a.ban_tit2_a {
+  width: 195px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ff4a4a;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #ff4a4a;
+  display: block;
+  margin: 12px auto 0;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+a.ban_tit2_area1 {
+  margin-right: 25px;
+  color: #ff4a4a;
+}
+.ban_tit2_area a {
+  width: 80px;
+  height: 50px;
+  display: inline-block;
+  line-height: 72px;
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+.ban_tit2_area {
+  height: 80px;
+  padding: 0 12px;
+  text-align: center;
+}
+.ban_tit4 {
+  margin: 15px 15px 0;
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+  background: url(//img.iblimg.com/respc-1/resources/v4.2/css/i/ban_titgift.png) no-repeat 0 0;
+  position: relative;
+  overflow: hidden;
+}
+a:link, a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+.ban_more {
+  padding-right: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999;
+}
+.ban_qnew {
+  margin-top: 2px;
+  line-height: 25px;
+}
+/* 以上是轮播图 */
+.accordion{
+  width: 100%;
+}
+.accordion_heart{
+  width: 1200px;
+  height: 335px;
+  margin: 0 auto;
+}
+.accordion_img{
+  width: 1200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.accordion_img img{
+  vertical-align: middle;
+}
+.accordion_img .accordion_a{
+  float: right;
+  color: #333;
+  margin-top: 20px;
+}
+.accordion_ul{
+  float: left;
+}
+.accordion_ul li {
+  width: 230px;
+  height: 270px;
+  float: left;
+  text-align: center;
+  margin: -16px 5px;
+  box-shadow: 3px 0 3px #e5e5e5, -3px 0 3px #e5e5e5;
+  background: #fff;
+}
+.accordion_li img{
+  width: 150px;;
+  transition: all 2s;
+}
+.accordion_li:hover img{
+  transform: scale(1.3)
+}
+.card_name {
+  margin-top: 11px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_sel {
+  margin-top: 10px;
+  text-align: center;
+}
+/* 以上是手风琴 */
+.picture{
+  width: 100%;
+}
+.picture_img{
+  width: 1200px;
+  height: 510px;
+  margin: 0 auto;
+}
+.picture_div{
+  width: 1170px;
+  height: 440px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  background: #fff;
+}
+.div_item{
+  width: 390px;
+  height: 220px;
+  float: left;
+  overflow: hidden;
+}
+/* 以上是六张图片 */
+.issue{
+  width: 100%;
+}
+.issue_heart{
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+}
+.issue_top{
+  margin-top: 10px;
+  width: 1200px;
+  height: 50px;
+}
+.issue_top h4{
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+  color: #000;
+  padding-left: 20px;
+  height: 50px;
+}
+.issue_top .more{
+    right: 10px;
+    top: 22px;
+    margin-top: 34px;
+    color: #333;
+    float: right;
+}
+.issue_bottom{
+  width: 1200px;
+  height: 190px;
+}
+.issue_item{
+  width: 293px;
+  height: 190px;
+  float: left;
+  margin: 0 3px;
+  background: #fff;
+}
+.issue_item_an {
+  width: 261px;
+  height: 44px;
+  border-bottom: 1px dashed #bbb;
+  margin: 0 auto 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  line-height: 50px;
+}
+.issue_item_q {
+  width: 261px;
+  height: 140px;
+  font-size: 14px;
+  color: #666;
+  margin: 0 auto;
+  line-height: 22px;
+  overflow: hidden;
+}
+/* 以上是常见问题*/
+.w1200 .footer {
+  clear: both;
+  padding-top: 30px;
+}
+.footer {
+  min-width: 1190px;
+  margin: 0 auto;
+  clear: both;
+  font-family: 'Microsoft YaHei';
+}
+.footer .helpnav {
+  background: #f3f3f3;
+  min-width: 1190px;
+  padding: 24px 0;
+  clear: both;
+}
+.footer .helpnav-list ul {
+  margin-left: 55px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #555;
+}
+
+.w1200 .wrap {
+  width: 1200px;
+}
+.footer .helpnav-title i {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.footer .helpnav-list {
+  float: left;
+  width: 200px;
+  margin: 0 10px;
+  display: inline-block;
+}
+.helpnav-title .footic1 {
+  background: url(../img/footer1200_sprite.png) no-repeat 0 0;
+}
+.helpnav-title .footic2 {
+  background: url(../img/footer1200_sprite.png) no-repeat 0 -40px;
+}
+.helpnav-title .footic3 {
+  background: url(../img/footer1200_sprite.png) no-repeat 0 -80px;
+}
+.helpnav-title .footic4 {
+  background: url(../img/footer1200_sprite.png) no-repeat 0 -120px;
+}
+.helpnav-title .footic5 {
+  background: url(../img/footer1200_sprite.png) no-repeat 0 -160px;
+}
+.footer .helpnav-title {
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+.w1200 .wrap, .w960 .wrap {
+  position: relative;
+}
+.w1200 .wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+.footer-center {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* 以上是介绍 */
+
+.footer .bottom-nav {
+  line-height: 24px;
+  text-align: center;
+  padding: 15px 0 0;
+  color: #999;
+  background: #f3f3f3;
+}
+.bottom-nav span {
+  padding: 0 8px;
+}
+.footer .bottom-nav .police a img {
+  display: inline;
+}
+.footer div.bottom-nav {
+  background: #fff;
+}
+.footer .bottom-nav .police {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 10px 0 20px;
+  background: #fff;
+}
+.footer .bottom-nav .police a {
+  display: inline-block;
+  text-decoration: none;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.footer .bottom-nav .police a span {
+  display: inline;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 0 5px;
+  color: #999;
+}
+.sign{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.footer .bottom-nav a:link, .footer .bottom-nav a:visited {
+  color: #333;
+}

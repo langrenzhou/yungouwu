@@ -1,0 +1,215 @@
+.typeArea {
+    width: 1190px;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+
+.banner_box {
+    width: 1190px;
+    height: 420px;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-box {
+    width: 100%;
+    height: 420px;
+}
+
+.img-box>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.img-box>img:first-child {
+    display: block;
+
+}
+
+.banner_box>.nav_box {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    width: 165px;
+    height: 20px;
+    margin-left: -84px;
+    z-index: 10;
+}
+
+.banner_box li {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    z-index: 10;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.banner_box li:last-child {
+    margin-right: 0
+}
+
+.banner_box li:hover {
+    background-color: red;
+}
+
+.active {
+    background-color: red;
+}
+
+.title_img {
+    width: 1190px;
+    height: 75px;
+    margin: 20px auto 0;
+}
+
+/* 下面是tab切换 */
+.tab_nav>ul {
+    overflow: hidden;
+    width: 904px;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab_nav li {
+    float: left;
+    width: 226px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.tab_nav li:last-child {
+    width: 206px;
+}
+
+.line {
+    width: 226px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 58px;
+    left: -20px;
+    display: none;
+}
+
+.triangle {
+    border: 5px solid transparent;
+    border-bottom: 5px solid red;
+    position: absolute;
+    top: -10px;
+    left: 47%;
+    /* display: none; */
+}
+
+.title {
+    color: #37060a;
+    font-family: "Microsoft YaHei";
+    font-size: 22px;
+    vertical-align: 4px;
+    margin-left: 5px;
+}
+
+.tab_nav li:first-child span {
+    color: red;
+    margin-left: 30px
+}
+
+.activeLine {
+    display: block;
+}
+
+.tab_nav li:hover .line {
+    display: block;
+}
+
+.tab_nav li:hover .title {
+    color: red;
+}
+
+.tab_nav li:nth-child(2):hover i {
+    background: url("../../images/images-dc/dc_list/sprites.png") no-repeat -94px -0px;
+}
+
+.tab_nav li:nth-child(3):hover i {
+    background: url("../../images/images-dc/dc_list/sprites.png") no-repeat -0px -0px;
+}
+
+.tab_nav li:nth-child(4):hover i {
+    background: url("../../images/images-dc/dc_list/sprites.png") no-repeat -49px -0px;
+}
+
+
+/* 下面是商品展示 */
+.content_list>ul {
+    height: auto;
+}
+
+.content_list li {
+    margin-top: 30px;
+    width: 378px;
+    height: 308px;
+    box-shadow: 0 0 3px 3px #ccc;
+    float: left;
+    margin-right: 25px;
+    position: relative;
+}
+
+.content_list li:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.content_list li .img_box {
+    width: 100%;
+    height: 226px;
+    margin-bottom: 12px;
+}
+
+.content_list li .pro_img {
+    width: 100%;
+}
+
+.content_list li .pro_title {
+    color: #000;
+    font-size: 16px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.content_list li .pro_title:hover {
+    color: #e6133c;
+}
+
+.content_list li .discounts {
+    width: 202px;
+    height: 20px;
+    color: #e6133c;
+    font-size: 16px;
+    margin: 5px 0 0 30px;
+}
+
+.content_list li .lookMore {
+    color: #fff;
+    font-size: 16px;
+    width: 116px;
+    height: 36px;
+    background-color: #e6133c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 250px;
+    left: 240px;
+    cursor: pointer;
+}
+.content_list li:hover {
+    box-shadow: 0 0 4px 4px #999;
+}

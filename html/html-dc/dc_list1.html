@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新品上线 先入为快</title>
+    <link rel="stylesheet" href="../../css/css-dc/list.css">
+    <link rel="stylesheet" href="../../css/css-dc/initializ.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heardBg">
+        <img src="../../images/images-dc/dc_list_bg1.png">
+    </div>
+    <div class="content"> </div>
+    <div id="footer"></div>
+    <script src="../../js/js-dc/jquery-1.12.1.js"></script>
+    <script>
+        $(function () {
+            for (var i = 1; i <= 4; i++) {
+                list()
+            }
+            function list() {
+                var title_img = "";
+                var content = "";
+                var list_Li = "";
+                $.ajax({
+                    type: "GET",
+                    dataType: "JSON",
+                    url: "../../php/php-dc/list.php",
+                    data: {
+                        num: i,
+                    },
+                    error: function () {
+                        // alert("服务器连接错误");
+                    },
+                    success: function (res) {
+                        // console.log(res[0].title_img);
+                        title_img += `
+                    <div class="title_img"><img src="${res[0].title_img}"></div>
+                    `;
+                        for (key in res) {
+                            list_Li += `
+                        <li class="list fl">
+                        <div class="box"><a href="javaScript:;" title="${res[key].pro_title}"><img src="${res[key].img_url}" class="pro_img"></a></div>
+                <a href="javaScript:;" title="${res[key].pro_title}" class="title">${res[key].pro_title}</a>
+                <div class="bottom clearfix">
+                    <span class="price fl">${res[key].price}</span>
+                    <button class="fr">加购物车</button>
+                </div>
+                        `;
+                        }
+                        content = `
+                    ${title_img}
+                    <ul class="box clearfix">${list_Li}</ul>
+                    `;
+                        $(".content").append(content)
+                    }
+                })
+            }
+        })
+    </script>
+    <script>
+        $("#footer").load("../html-lz/footer.html");
+    </script>
+</body>
+
+</html>

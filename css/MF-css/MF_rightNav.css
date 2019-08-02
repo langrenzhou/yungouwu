@@ -1,0 +1,384 @@
+/* 右侧导航样式 */
+.rightnavwrap{
+    /* width: 314px; */
+    height: 811px;
+    position: fixed;
+    right:0;
+    top: 0;
+    /* z-index: 50; */
+
+}
+.rightnav{
+    height: 100%;
+    width: 38px;
+    background: #333;
+    text-align: center;
+    /* display: none; */
+    float: left;
+}
+.rightcont{
+    height: 811px;
+    width: 276px;
+    background: #fbf5f5;
+    overflow: hidden;
+    /* padding: 0 20px; */
+    display:none;
+    float: left;
+    position: relative;
+}
+.box{
+    background: #333;
+    width: 38px;
+    height: 40px;
+    line-height: 48px; 
+    position: relative;
+    transition: all 0.5s;
+}
+.box1{
+    background:#e6133c;
+    width: 38px;
+    height: 40px;
+    line-height: 48px; 
+    position: relative;
+    /* transition: all 0.5s; */
+}
+.box1::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left:8px solid white;
+    position:absolute;
+    top:50%;
+    left: 0;
+    margin-top: -8px;
+}
+.box2{
+    background:#e6133c;
+    width: 38px;
+    height: 40px;
+    line-height: 48px; 
+    position: relative;
+    /* transition: all 0.5s; */
+}
+.box2::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right:8px solid white;
+    position:absolute;
+    top:50%;
+    right: 0;
+    margin-top: -8px;
+}
+.navleft{
+    width: 38px;
+    height: 100%;
+    position: absolute;
+    top: 105px;
+    left: 0;
+}
+.navleft .info{
+    color: white;
+    font-size: 22px;
+}
+.shop{
+    margin-top: 25px;
+}
+.cart{
+    width: 43px;
+    height: 176px;
+    background: #333;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    box-shadow: -1px 0px 1px 1px #666;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+}
+
+.cart:hover{
+    background: #e6133c;
+}
+
+.cartfont p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.redDot{
+    width:20px;
+    height: 20px;
+    background: #e6133c;
+    border-radius: 50%; 
+    margin: 10px auto;
+}
+.navleft>.collect{
+    margin-top: 230px;
+    margin-bottom: 5px;
+}
+.rightnavcol{
+    position: absolute;
+    top: 216px;
+}
+.sec-code{
+    margin-top: 85px;
+    margin-bottom: 5px;
+}
+.tip{
+    /* width:86px; */
+    width: 0;
+    font-size: 14px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8% 0 0 8%;
+    border: 1px solid #dddddd;
+    border-right: 0;
+    position: absolute;
+    top:0;
+    left: 0px;
+    font-family: 'Microsoft YaHei';
+    background:white;
+    display: none;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.tipcode{
+    height: 100px;
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+}
+.box:hover{
+    background:#e6133c;
+}
+
+.box:hover>.tip{
+   display: block;
+}
+.rightcontTop{ 
+    width: 100%;
+    height: 20px;
+    background: #eee;
+    padding: 10px 20px;
+}
+.rightarrow{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "宋体";
+    font-weight: bolder;
+}
+.returnTop{
+    display: none;
+}
+.returnTop .top{
+    font-size: 18px;
+    line-height: 0;
+}
+.returnTop span{
+    font-size: 12px;
+}
+.tipcode img{
+    width: 100px;
+}
+
+/* 导航右侧用户登录 */
+
+.login-ban{
+    width: 100%px;
+    margin: 55px auto;
+    /* padding: 45px 0px; */
+    display: none;
+    padding: 0 20px;
+}
+ul h2{
+    font-size: 18px;
+    float: left;
+}
+ul .newcount{
+    font-size: 12px;
+    float: right;
+}
+.newcount a{
+    color: #0088cc;
+}
+.login-title{
+    height: 50px;
+    line-height: 45px;
+}
+.logininput{
+    position: relative;
+}
+.tuboap{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 6px;
+    line-height: 25px;
+    text-align: center;
+}
+.tuboap .iconstyle{
+    font-size: 18px;
+    color: #ccc;
+}
+.login-item .inputtxt{ 
+    width: 200px;
+    padding-left: 34px;
+    font-size: 12px;
+    height: 36px;
+    margin: 10px 0;
+    
+}
+.login-item .btn{
+    padding: 0;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    background: #e6133c;
+    border: none;
+}
+.forgetPassword{
+    float: right;
+}
+.forgetPassword a{
+    color: #e6133c;
+}
+.forgetPassword a:hover{
+    color: #0088cc;
+}
+.viplogin{
+    float: right;
+}
+.viplogin a{
+    color:#666666;
+}
+.viplogin a:hover{
+    color: #0088cc;
+}
+.bottom-line{
+    width: 100%;
+    height: 24px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    line-height: 49px;
+}
+.bottom-line span{
+    background: #fff;
+    padding: 0px 15px;
+    color: #999;
+    line-height: 49px;
+}
+.otherpartner{
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+}
+.partnercount{
+    float: left;
+    margin: 15px 4px;
+    width: 66px;
+    height: 22px;
+    overflow: hidden;
+}
+.partnercount>img{
+    margin-top: -22px;
+}
+.partnercount>img:hover{
+    margin-top: 0px;
+}
+.partner{
+    width: 100%;
+    height: 44px;
+}
+.login-item .verificationCode{
+    width: 85px;
+}
+.codeCanvas{
+    float: right;
+    margin-top: 10px;
+}
+/* .code{
+    margin: 20px 0;
+} */
+.error{
+    color:#e6133c;
+}
+/* 购物车板块 */
+
+.cart-ban{
+    width: 100%;
+    display: none;
+}
+.cart-bottom{
+    width: 100%;
+    height: 92px;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.cartpriceTotal{
+    width: 286px;
+    height: 36px;
+    color: #666;
+    font-size: 12px;
+}
+.cart-content{
+    width: 100%;
+    background: #fff;
+}
+.lookCart{
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background: #d62233;
+    outline: none;
+}
+/* 右侧导航购物车 */
+.product_show li{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    padding: 10px 0 10px 10px;
+    float: left;
+    box-sizing: border-box;
+}
+.product_show img{
+    width: 48px;
+}
+.product_show .rigImg{
+    float: left;
+}
+.product_show .rightIntroduct{
+    float: left;
+    font-size: 12px;
+    color: #666666;
+    width: 96px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.product_show .rightPrice{
+    color: #d20000;
+    float: right;
+}
+#txtTotalNum{
+    color: #d20000
+}
+#txtTotalPrice{
+    color: #d20000;
+    font-size: 18px;
+}

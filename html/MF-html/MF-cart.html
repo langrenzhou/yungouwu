@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../../css/MF-css/initializ.css" />
+  <link rel="stylesheet" href="../../css/MF-css/MF-cart.css" />
+  <link rel="stylesheet" href="../../font/iconfont.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="cartwrap">
+    <div class="typeArea">
+      <div class="count-carttop clearfix">
+        <div class="carttop-left">
+          <img src="../../images/MF-image/MF-cart/logo.png" alt="" />
+          <span>购物车</span>
+        </div>
+        <div class="carttop-right">
+          <span>现在</span>
+          <a href="../../html/MF-html/MF-login.html">
+            <span>登录</span>
+          </a>
+          <span>,您购物车中的商品将会被永久保存</span>
+        </div>
+      </div>
+      <div class="cartShoplist">
+        <div class="shoplistTop clearfix">
+          <div class="allgoods">
+            <span>全部商品</span>
+            <span class="totalGoodsNum">1</span>
+          </div>
+          <div class="DeliveryAddress">
+            <span class="delivery">配送至</span>
+            <select name="" id="pro">
+              <!-- <option value="河南省">河南省</option> -->
+            </select>
+            <select id="city"></select>
+            <select id="area"></select>
+          </div>
+        </div>
+        <!-- <div class="cart-table-name">
+                    <input type="checkbox" name="" id="" checked>
+                    <i class="iconfont icon-tubiaolunkuo- cartfont"></i>
+                    <span class="ibl">i百联</span>
+                </div> -->
+        <table border="0" cellpadding="0" cellspacing="0" class="cartTable">
+          <tr class="cart-head">
+            <td class="goodsselect">
+              <label for="goodscheck">
+                <input type="checkbox" name="" id="" checked class="allcheck onecheck" />
+                <span>全选</span>
+              </label>
+            </td>
+            <td class="goodsinformation">商品信息</td>
+            <td class="goodsprice">单价（元）</td>
+            <td class="goodsnum">件数</td>
+            <td class="goodsmoney">金额（元）</td>
+            <td class="goodsopt">操作</td>
+          </tr>
+          <!-- <tr class="cart-table-name">
+            <td class="goodsclassify" colspan=6>
+              <input type="checkbox" name="" id="" checked class="onecheck blcheck" />
+              <i class="iconfont icon-tubiaolunkuo- cartfont"></i>
+              <span class="ibl">i百联</span>
+            </td>
+          </tr> -->
+
+          <!-- <tr class="cartGoodslist">
+            <td class="goodsselect goodImg">
+              <label for="goodscheck">
+                <input type="checkbox" name="" id="" checked class="goodscheck onecheck" />
+                <img src="../../images/MF-image/MF-cart/SP_2000_20000211344001_01_10006.jpg" alt="">
+              </label>
+            </td>
+            <td class="goodsinformation"><a href="#">吉列（Gillette）刮胡泡薄荷香型 210g</a></td>
+            <td class="goodsprice">
+              <span>￥</span>
+              <span class="onePrice">28.50</span>
+            </td>
+            <td class="goodsnum goodsPR">
+              <div class="reduce clicksty">-</div>
+              <div>
+                <input type="text" value="1" class="countNum commodityNum">
+              </div>
+              <div class="plus clicksty">+</div>
+            </td>
+            <td class="goodsmoney">
+              <span>￥</span>
+              <span class="totalPrice">28.50</span>
+            </td>
+            <td class="goodsopt">
+              <div class="deleteGoods">删除</div>
+            </td>
+          </tr> -->
+        </table>
+        <div class="cartBottom">
+          <div class="bottomcheck">
+            <input type="checkbox" name="" id="" checked class="allcheck onecheck">
+            <span>全选</span>
+          </div>
+          <a href="#">
+            <i class="iconfont"></i>
+            <span>删除</span>
+          </a>
+          <a href="#">
+            <span>清除失效商品</span>
+          </a>
+          <div class="cartbottomright">
+            <a href="#">
+              <span>已选择</span>
+              <span class="choiceNum">1</span>
+              <span>商品</span>
+            </a>
+            <div class="shopmoney">
+              <span>商品金额（不含运费）：</span>
+              <span class="tolmoney">￥</span>
+              <span class="tolmoney tolmoney1">0</span>
+            </div>
+            <div class="jsbtn">
+              <span>去结算</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/MF-js/area.js"></script>
+  <script src="../../js/MF-js/jquery-1.12.1.js"></script>
+  <script src="../../js/MF-js/MF-cart.js"></script>
+</body>
+</html>

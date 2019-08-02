@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+default-character-set=gbk
+default-collation=gbk_chinese_ci
+=======
+default-character-set=utf8
+default-collation=utf8_general_ci
+>>>>>>> feature-dachen
+=======
+default-character-set=utf8
+default-collation=utf8_general_ci
+>>>>>>> future-ywq

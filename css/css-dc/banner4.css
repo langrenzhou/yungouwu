@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+.typeAreaDc {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.warp {
+    min-width: 1190px;
+    width: 100%;
+    background-color: rgb(253, 245, 233);
+}
+
+.widthDc {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.discounts {
+    font-size: 0;
+}
+
+.discounts img {
+    width: 100%;
+}
+
+.discounts .bottomFl {
+    width: 100%;
+    /* height: 474px; */
+}
+
+.proHot {
+    height: 165px;
+    text-align: center;
+}
+
+/* 下面是明星产品 */
+.titleImg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.listBox {
+    width: 990px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.listBox .listPro {
+    float: left;
+    width: 318px;
+    height: 406px;
+    background-color: white;
+    margin: 10px 0 0 8px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.listBox .listPro:nth-child(1) {
+    margin-left: 0
+}
+
+.listBox .listPro:nth-child(4) {
+    margin-left: 0
+}
+
+.listBox .listPro img {
+    width: 100%;
+}
+
+.listBox .listPro a {
+    width: 310px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    font-family: "Microsoft YaHei";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    font-size: 14px;
+    color: #252525;
+}
+
+.listBox .listPro a:hover {
+    color: #d62233;
+    text-decoration: underline;
+}
+
+.listBox .listPro .bottomDc {
+    margin-top: 25px
+}
+
+.listBox .listPro .price {
+    font-size: 24px;
+    color: #de001c;
+    display: inline-block;
+    width: 90px;
+}
+
+.listBox .listPro .addCart {
+    outline: none;
+    width: 106px;
+    height: 31px;
+    border: 0;
+    background: url(../images/banner4/special_threebuy.png) no-repeat center center;
+    vertical-align: middle;
+    margin-left: 108px;
+}
+
+/* 下面是第二个循环 */
+.beautiful {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.beautiful .str {
+    text-align: center;
+    float: left;
+    width: 316px;
+    height: 307px;
+    margin: 10px 10px 0 0;
+    position: relative;
+}
+
+.beautiful .strBottom {
+    text-align: center;
+    float: left;
+    margin: 10px 10px 0 0;
+    position: relative;
+    width: 480px;
+    height: 307px;
+}
+
+.beautiful .str:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.beautiful dd .discounts {
+    width: 200px;
+    height: 30px;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.beautiful dd .enterInto {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -30px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}

@@ -1,0 +1,117 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, 
+blockquote, dl, dt, dd, ul, ol, li, 
+pre, form, fieldset, legend, button,
+input, textarea, th, td 
+{ 
+     margin:0; padding:0;
+}
+
+body, button, input, 
+select, textarea 
+{ 
+    font:12px/1.5 'Microsoft YaHei', \5b8b\4f53;
+    font-family: 'Microsoft YaHei';
+}
+
+h1, h2, h3, h4, h5, h6
+{ 
+    font-size:100%; 
+}
+
+address, cite,
+dfn, em, var 
+{ 
+    font-style:normal; 
+}
+
+code, kbd, pre, samp 
+{ 
+    font-family: couriernew, courier, monospace; 
+}
+i {
+    font-style: normal;
+}
+small{ 
+    font-size:12px; 
+}
+
+ul, ol 
+{ 
+    list-style:none; 
+}
+
+a 
+{ 
+    text-decoration:none; 
+}
+
+a:hover 
+{ 
+    text-decoration:underline; 
+}
+
+sup 
+{ 
+    vertical-align:text-top; 
+}
+
+sub
+{ 
+    vertical-align:text-bottom; 
+}
+
+legend 
+{ 
+    color:#000; 
+}
+
+/* 可以解决IE下 a标签包裹下的图片出现蓝色边框 */
+fieldset, img 
+{ 
+    border:0;   
+}
+
+button, input, select, textarea 
+{ 
+    font-size:100%; 
+}
+
+/* 清除浮动 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* 宽度100% */
+.windowAll{
+    width: 100%;
+}
+
+/* 版心设置 */
+.typeArea{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.pr{
+    position: relative;
+}
+
+.pa{
+    position: absolute;
+}
+
+.pf{
+    position: fixed;
+}

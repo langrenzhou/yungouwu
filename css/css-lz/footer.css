@@ -1,0 +1,175 @@
+/* footer */
+.demo{
+    height: 3000px;
+}
+.footer{
+    background-color: #f3f3f3;
+}
+
+.footer dl{
+    margin:24px 10px;
+}
+
+.footer dl:first-child
+{
+    margin-left: 40px;
+}
+
+.footer dl:last-child
+{
+    margin-right: 40px;
+}
+
+.footer dt{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer dl i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background: url(../../images/image-lz/footer_sprite.png) no-repeat;
+    vertical-align: middle;
+}
+
+.footer dl:first-child i{
+    background-position: 0 0;
+}
+
+.footer dl:nth-child(2) i{
+    background-position: 0 -40px;
+}
+
+.footer dl:nth-child(3) i{
+    background-position: 0 -80px;
+}
+
+.footer dl:nth-child(4) i{
+    background-position: 0 -120px;
+}
+
+.footer dl:last-child i{
+    background-position: 0 -160px;
+}
+
+.footer dd{
+    margin-left: 55px;
+}
+
+.footer dd a{
+    line-height: 26px;
+    color: #555;
+    font-size: 13px;
+}
+
+.footer dd a:hover{
+    color: rgb(250, 2, 2);
+}
+
+/* backTop返回顶部 */
+.footer .backTop{
+    right: 50%;
+    bottom: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 602px;
+    margin-bottom: -230px;
+    overflow: hidden;
+    display: none;
+}
+
+.footer .backTop a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .backTop div{
+   top: 0;
+   left: 0;
+}
+
+.footer .backTop:hover div{
+    top: -50px;
+ }
+ 
+/* aboutUs */
+.footer .aboutUs{
+    padding-top: 15px;
+}
+
+.footer .aboutUs p{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 0;
+    line-height: 24px;
+}
+
+.footer .aboutUs p:first-child a{
+    color: #333;
+    font-size: 12px;
+}
+
+.footer .aboutUs p:first-child a:hover{
+    color: rgb(250, 2, 2);
+    text-decoration: none;
+}
+
+.footer .aboutUs p:first-child a::after,
+.footer .aboutUs p:nth-child(2) span::after
+{
+   content: "|";
+   padding: 0 10px;
+}
+
+.footer .aboutUs p:first-child a:last-child::after,
+.footer .aboutUs p:nth-child(2) span:last-child::after
+{
+   content: none;
+}
+
+
+.footer .aboutUs p:nth-child(2) span,
+.footer .aboutUs p:last-child a
+{
+    color: #999;
+    font-size: 12px;
+}
+
+.footer .aboutUs p:last-child a
+{    
+    font-size:0;
+}
+
+.footer .aboutUs p:last-child a img
+{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    vertical-align:-5px;
+}
+
+.footer .aboutUs p:last-child a span
+{
+    margin: 0 18px 0 13px;
+    font-size: 12px;
+}
+
+.footer .aboutUs p:nth-child(3) a,
+.footer .aboutUs p:nth-child(4) a
+{
+    color: #666;
+    font-size: 12px;
+}
+
+.footer .aboutUs p:nth-child(3) a,
+.footer .aboutUs p:nth-child(4) a,
+.footer .aboutUs p:nth-child(5) a
+{
+    text-decoration: none;
+}

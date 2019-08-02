@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css_LR/tu.css">
+</head>
+<body>
+    <div class="header_LR">
+        <img src="../IMG_LR/tu5img/big01.jpg" alt="">
+    </div>
+    <div class="body_LR-first">
+        <img src="../IMG_LR/tu5img/05.jpg" alt="">
+    </div>
+    <div class="body_LR_border">
+        <div class="body_LR_border-area">
+            <img src="../IMG_LR/tu5img/02.jpg" alt="">
+            <a href="" class="a1"></a>
+            <a href="" class=""></a>
+        </div>
+    </div>
+    <div class="body_LR-second">
+        <div class="area">
+            <img src="../IMG_LR/tu5img/03.png.webp" alt="">
+        </div>
+
+    </div>
+    <div class="yxzx_LR">
+        <ul class="yxzx_LR-ul clear">
+        </ul>
+    </div>
+    <div class="body_LR-second">
+        <div class="area">
+            <img src="../IMG_LR/tu5img/601637601.png.webp" alt="">
+        </div>
+
+    </div>
+    <div class="rmbk_LR">
+        <ul class="rmbk_LR-ul clear">
+        </ul>
+    </div>
+    <div class="body_LR-second">
+        <div class="area">
+            <img src="../IMG_LR/tu5img/432964420.png.webp" alt="">
+        </div>
+    </div>
+<div class="thmc_LR">
+    <ul class="thmc_LR-ul">
+        <li>
+            <a href=""><img src="../IMG_LR/tu5img/15.jpg" alt=""></a>
+        </li>
+        <li>
+                <a href=""><img src="../IMG_LR/tu5img/11.jpg" alt=""></a>
+        </li>
+        <li>
+                <a href=""><img src="../IMG_LR/tu5img/09.jpg" alt=""></a>
+        </li>
+        <li>
+                <a href=""><img src="../IMG_LR/tu5img/07.jpg" alt=""></a>
+        </li>
+    </ul>
+</div>
+<div class="foot_LR">
+    <div class="foot_LR-area">
+        <ul>
+            <li>
+                <img src="../IMG_LR/tu5img/08.jpg" alt="">
+            </li>
+            <li>
+                <img src="../IMG_LR/tu5img/10.png" alt="">
+            </li>
+            <li>
+                <img src="../IMG_LR/tu5img/12.jpg" alt="">
+            </li>
+            <li>
+                <img src="../IMG_LR/tu5img/13.jpg" alt="">
+            </li>
+            <li>
+                <img src="../IMG_LR/tu5img/14.jpg" alt="">
+            </li>
+            <li>
+                <img src="../IMG_LR/tu5img/16.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+        <script src="../js_LR/jquery-1.8.3.min.js"></script>
+        <script>
+            var html = ""
+            var htmls = ''
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost/BL/php_LR/tu5.php?page=0", true)
+            xhr.send()
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var res = JSON.parse(xhr.responseText);
+                    var zyl = document.getElementsByClassName("yxzx_LR-ul")[0]
+                    for (var i = 0; i < res.length; i++) {
+                        html +=
+                            "<li> <div class='yxzx_LR-ul-li-box'><div class='yxzx_LR-ul-li-box-img'><a href='' ><img src=" +
+                            res[i].img_url + " titlt=" + res[i].title +
+                            "></a></div><div class='yxzx_LR-ul-li-box-content'><a href='' title=" + res[i].title +
+                            ">" + res[i].title + "</a></div><div class='yxzx_LR-ul-li-box-jiage'><strong>￥" + res[i]
+                            .jiage +
+                            "</strong></div><div class='yxzx_LR-ul-li-box-gouwuche'><a href=''>加入购物车>>></a></div></div></li>"
+                        zyl.innerHTML = html
+                    }
+                }
+            }
+            $.ajax({
+                url: "http://localhost/BL/php_LR/tu5.php?page=10",
+                dataType: 'json',
+                error: function () {
+                    alert("请求失败了")
+                },
+                success: function (asd) {
+                    for (var i = 0; i < asd.length; i++) {
+                        htmls +=
+                            "<li> <div class='rmbk_LR-ul-li-box'><div class='rmbk_LR-ul-li-box-img'><a href='' ><img src=" +
+                            asd[i].img_url + " titlt=" + asd[i].title +
+                            "></a></div><div class='rmbk_LR-ul-li-box-content'><a href='' title=" + asd[i]
+                            .title + ">" + asd[i].title +
+                            "</a></div><div class='rmbk_LR-ul-li-box-jiage'><strong>￥" + asd[i].jiage +
+                            "</strong></div><div class='rmbk_LR-ul-li-box-gouwuche'><a href=''>加入购物车>>></a></div></div></li>"
+                        $(".rmbk_LR-ul").html(htmls)
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>

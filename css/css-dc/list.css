@@ -1,0 +1,93 @@
+.heardBg {
+    width: 100%;
+    font-size: 0;
+}
+.heardBg img {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    background-color: #73a8ca;
+}
+
+.title_img {
+    width: 990px;
+    height: 166px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.title_img img{
+    width: 100%;
+    height: 166px;
+}
+.content>.box {
+    width: 990px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.content>.box>.list {
+    width: 318px;
+    height: 406px;
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 7px;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+}
+.content>.box>.list:nth-child(3n+3) {
+    margin-right: 0;
+}
+.content>.box>.list>.box {
+    width: 304px;
+    height: 304px;
+    overflow: hidden;
+}
+.content>.box>.list img{
+    width: 304px;
+    height: 304px;
+    transform: all 2s;
+}
+.content>.box>.list:hover .pro_img{
+    transform: scale(1.02)
+}
+.content>.box>.list .title{
+    width: 304px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    color: #252525;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.content>.box>.list a:hover {
+    color: #d62233;
+    text-decoration-line: underline;
+}
+.content>.box>.list>.bottom {
+    margin-top: 25px;
+    width: 100%;
+    height: 31px;
+}
+.content>.box>.list span{
+    font-size: 18px;
+    color: #de001c;
+    vertical-align: bottom;
+}
+.content>.box>.list button {
+    width: 106px;
+    height: 31px;
+    border: none;
+    outline: none;
+    background-color: #de001c;
+    font-size: 16px;
+    color: #fff;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="sousuokuang" unicode="&#58899;" d="M712.704 675.328c-135.68 135.68-355.84 135.68-491.52 0s-135.68-355.84 0-491.52 355.84-135.68 491.52 0 135.68 355.84 0 491.52zM145.92 108.544C-31.744 285.696-31.744 573.44 145.92 751.104c177.664 177.152 464.896 177.152 642.56 0 177.664-177.664 177.664-464.896 0-642.56s-465.408-177.664-642.56 0z m848.896-206.336c-24.064-24.064-63.488-24.064-87.552 0L819.2-10.24c-24.064 24.064-24.064 63.488 0 87.552 24.064 24.064 63.488 24.064 87.552 0l87.552-87.552c24.576-24.064 24.576-63.488 0.512-87.552z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

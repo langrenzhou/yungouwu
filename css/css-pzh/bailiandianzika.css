@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width:100%;
+}
+.header_img{
+    width:990px;
+    margin: 0 auto;
+}
+.img_box {
+    widows: 158px;
+    height: 248px;
+    overflow: hidden;
+    float: left;
+}
+.img_box img{
+    width: 100%;
+    transition: all 2s;
+}
+.img_box:hover img{
+    transform: scale(1.3)
+}
+
