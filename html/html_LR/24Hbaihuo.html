@@ -654,77 +654,8 @@
     </div>
     </div>
     <script src="../js_LR/jquery-1.8.3.min.js"></script>
-    <script>
-        $(function () {
-           
-
-            // $(" .body_LR>.area>.second>ul>.li1>.lbt>.zjt").click(function () {
-            //     index++
-            //     if (index == length - 1) {
-            //         $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").stop().animate({
-            //             left: -index * width
-            //         }, function () {
-            //             $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").css({
-            //                 left: 0
-            //             })
-            //         })
-            //         index = 0
-            //     } else {
-            //         $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").stop().animate({
-            //             left: -index * width
-            //         })
-            //     }
-            // })
-            // $(" .body_LR>.area>.second>ul>.li1>.lbt>.yjt").click(function () {
-            //     index--
-            //     if (index == length - 1) {
-            //         $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").stop().animate({
-            //             left: -index * width
-            //         }, function () {
-            //             $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").css({
-            //                 left: 0
-            //             })
-            //         })
-            //         index = 0
-            //     } else {
-            //         if (index < (-length) - 1) {
-            //             $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").css({
-            //                 left: 0
-            //             })
-            //         } else {
-            //             $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").stop().animate({
-            //                 left: -index * width
-            //             }, function () {
-            //                 $(" .body_LR>.area>.second>ul>.li1>.lbt>.lbts>ul").css({
-            //                     left: 0
-            //                 })
-            //             })
-            //         }
-            //     }
-            // })
-            var index = 0;
-            var length = $(".lbts>ul>li").length
-            length = length / 4
-            var width = $(".lbt>.lbts>ul>li").width()
-            setInterval(function () {
-                index++;
-                if (index == length - 1) {
-                    $(".lbt>.lbts>ul").stop().animate({
-                        left: -index * width
-                    },1000,function () {
-                        $(".lbt>.lbts>ul").css({
-                            left:0
-                        })
-                    })
-                  index = 0   
-                } else {
-                    $(".lbt>.lbts>ul").stop().animate({
-                        left: -index * width
-                    },1000)
-                }
-            }, 2000)
-        })
-    </script>
+    <!-- 这里是轮播图的js文件-->
+    <script src="../../js/js_LR/24Hbaihuo.js"></script>
 </body>
 
 </html>

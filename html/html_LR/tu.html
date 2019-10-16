@@ -88,8 +88,10 @@
 </div>
         <script src="../js_LR/jquery-1.8.3.min.js"></script>
         <script>
+            //这里分别用了两次请求一次
             var html = ""
             var htmls = ''
+            //这里是原生的ajax的请求
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "http://localhost/BL/php_LR/tu5.php?page=0", true)
             xhr.send()
@@ -109,6 +111,7 @@
                     }
                 }
             }
+            //这里是jquery封装好的ajax
             $.ajax({
                 url: "http://localhost/BL/php_LR/tu5.php?page=10",
                 dataType: 'json',
